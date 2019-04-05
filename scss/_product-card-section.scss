@@ -17,6 +17,7 @@ main {
          a.product-card-section__box {
             background-color: $color_main_transparent;
             text-decoration: none;
+            position: relative;
             
             padding-bottom: 2rem;
            // border: 1px solid #eedbec;
@@ -26,6 +27,13 @@ main {
             height: 475px;
             aside {
                 overflow: hidden;
+
+                button {
+                    position: absolute;
+                    top: 0;
+                    left: 35%;
+                    display: none;
+                }
             }
             
 
@@ -93,6 +101,9 @@ main {
                     }
                 }
             }  
+            button {
+                display: block;
+            }
         }
 
         

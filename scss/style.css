@@ -325,6 +325,7 @@ main .product-card-section {
 main .product-card-section a.product-card-section__box {
   background-color: rgba(199, 0, 129, 0.047);
   text-decoration: none;
+  position: relative;
   padding-bottom: 2rem;
   width: 23.125rem;
   position: relative;
@@ -335,6 +336,13 @@ main .product-card-section a.product-card-section__box {
 
 main .product-card-section a.product-card-section__box aside {
   overflow: hidden;
+}
+
+main .product-card-section a.product-card-section__box aside button {
+  position: absolute;
+  top: 0;
+  left: 35%;
+  display: none;
 }
 
 main .product-card-section a.product-card-section__box .product-card-section__box__icons {
@@ -405,6 +413,10 @@ main .product-card-section a.product-card-section__box:hover .product-card-secti
 main .product-card-section a.product-card-section__box:hover .product-card-section__box__icons svg path {
   fill: inherit;
   color: inherit;
+}
+
+main .product-card-section a.product-card-section__box:hover button {
+  display: block;
 }
 
 main .product-card-section a.product-card-section__box:active {
@@ -748,5 +760,26 @@ main .modal-window .modal-window__block .modal-window__block__content svg {
   main .modal-window #modal-window__btn {
     left: 64%;
   }
+}
+
+main button {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  line-height: 2.5;
+  font-size: 1rem;
+  color: white;
+  text-shadow: black 1px 1px 1px;
+  background-color: #800053;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.6) 2px 2px 3px inset, rgba(0, 0, 0, 0.6) -2px -2px 3px inset;
+          box-shadow: rgba(255, 255, 255, 0.6) 2px 2px 3px inset, rgba(0, 0, 0, 0.6) -2px -2px 3px inset;
+  text-align: right;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  -o-border-image: initial;
+     border-image: initial;
+  padding: 0px 20px;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */
