@@ -796,6 +796,7 @@ main button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: none;
   font-family: Raleway, Georgia, serif;
   color: white;
   font-size: 1.5rem;
@@ -817,17 +818,5 @@ main button {
 
 #goods-list-section .goods-list__product-box span {
   width: 50%;
-}
-
-#goods-list-section .goods-list__product-box .basket-main__product-box__take-quantity {
-  width: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 /*# sourceMappingURL=style.css.map */
