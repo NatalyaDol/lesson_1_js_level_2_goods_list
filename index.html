@@ -11,7 +11,7 @@
 </head>
 <body>
     <main>
-        <button class="cart-button button" type="button" id="basket-btn">Корзина</button>
+        <button class="cart-button button" type="button" id="basket-btn" onclick="openBasket()">Корзина</button>
         <section class="product-card-section">
             <a class="product-card-section__box" href="#" target="blanck">
                 <aside>
@@ -55,10 +55,10 @@
             <div class="goods-list__product-box__price">Цена</div>
             <div class="goods-list__product-box__quantity">Количество</div>
             <div class="goods-list__product-box__totalPrice">Итого</div>
-            <input type="submit" value="X" class="goods-list-item__product-box__delete" onclick="deleteProductStringBasket()">
+            <input type="submit" value="X" class="goods-list-item__product-box__delete">
         </div>
     </section>
     
-    <script src="script/goods_list.js" async></script>
+    <script src="script/goods_list.js" defer></script>
 </body>
 </html>

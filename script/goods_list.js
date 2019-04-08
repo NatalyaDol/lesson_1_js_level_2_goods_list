@@ -7,6 +7,8 @@ const goods = [
     { title : 'Маршмеллоу на палочке', price : 500, src : 'image/products_photo/marsh_on_stick_photo/onstick_4_2.jpg' }
 ];
 
+//Отрисовка корзины
+//Paint the basket
 const renderGoodsItem = (title, price) => {
     return `<div class="goods-list__product-box">
     <span class="goods-list__product-box__name">${title}</span>
@@ -19,8 +21,19 @@ const renderGoodsItem = (title, price) => {
 const renderGoodsList = (list) => {
     let goodsList = list.map(item => renderGoodsItem(item.title, item.price));
     document.querySelector('.goods-list').innerHTML = goodsList;
+    goodsListSection.style.display = 'none';
+    
+};
+
+var openBasket = () => {
+    renderGoodsList(goods);
     goodsListSection.style.display = 'block';
 };
 
+
 //renderGoodsList(goods);
-btnBasket.addEventListener ('click',renderGoodsList(goods));
+
+window.addEventListener('click', function (evt) {console.log(evt)});
+window.addEventListener('onload', function (evt) {console.log(evt)});
+
+//btnBasket.addEventListener ('click', openBasket());
