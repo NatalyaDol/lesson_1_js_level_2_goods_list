@@ -18,22 +18,12 @@ const renderGoodsItem = (title, price) => {
     </div>`
 };
 
+//создание массива с товарами GoodList
 const renderGoodsList = (list) => {
     let goodsList = list.map(item => renderGoodsItem(item.title, item.price));
-    document.querySelector('.goods-list').innerHTML = goodsList;
-    goodsListSection.style.display = 'none';
-    
-};
-
-var openBasket = () => {
-    renderGoodsList(goods);
+    document.querySelector('.goods-list').innerHTML = goodsList.join('');
     goodsListSection.style.display = 'block';
 };
 
-
-//renderGoodsList(goods);
-
 window.addEventListener('click', function (evt) {console.log(evt)});
 window.addEventListener('onload', function (evt) {console.log(evt)});
-
-//btnBasket.addEventListener ('click', openBasket());
